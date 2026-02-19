@@ -3,7 +3,7 @@ const prompt = require('prompt-sync')();
 
 //lançamento das variáveis e solicitação ao usuário 
 let nomeHeroi = prompt("Digite o nome do Herói: ")
-let qtdxp = Number(prompt("Agora, informe a quantidade de XP do herói: "))
+let qtdxp = Number(prompt("Agora, informe o XP do herói: "))
 let nivelHeroi;
 
 //Estrutura Condicional para validação do Nível do herói
