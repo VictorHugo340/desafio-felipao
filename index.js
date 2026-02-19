@@ -6,7 +6,11 @@ let nomeHeroi = prompt("Digite o nome do Herói: ")
 let qtdxp = Number(prompt("Agora, informe a quantidade de XP do herói: "))
 let nivelHeroi;
 
-//Estrutura COndicional para validação do Nível do herói
+//Estrutura Condicional para validação do Nível do herói
+if (isNaN(qtdxp) || qtdxp < 0) {
+    console.log("XP inválido. Digite um número válido.");
+} else {
+
 if (qtdxp <= 1000) {
     nivelHeroi = "Ferro"
 } else if (qtdxp <= 2000){
@@ -27,3 +31,4 @@ if (qtdxp <= 1000) {
 
 //Saída
 console.log ("O herói de nome " + nomeHeroi + " tem " + qtdxp + " XP e está no nível " + nivelHeroi + " !")
+}
